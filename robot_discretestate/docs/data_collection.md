@@ -1,0 +1,16 @@
+# Data collection process
+   - The robotic arm's end effector was setup to move inside a 9 cell grid in front of the robot.  The joint positions for centroids of the 9 cell were recorded.  Five high level commands were used to navigate the grid.
+     -  "Move North"
+     -  "Move South"
+     -  "Move East"
+     -  "Move West"
+     -  "Stay in place" 
+   - Distractors
+     - Large TV in the background
+     - Orb light rotating through colors
+     - Several flashing ornamental lights
+   - A random policy was used to explore the grid.  Each time step consisted of 
+     - Capturing a before image
+     - Executing the move command on the robot
+     - Capturing an after image
+     - Recording the data to a csv file.
